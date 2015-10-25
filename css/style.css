@@ -1,0 +1,118 @@
+body{
+	font: 12px Arial;
+	color: #000;
+}
+<<<<<<< HEAD
+=======
+p {padding: 0; margin:0;}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+
+button, input[type="button"]{
+	cursor: pointer;
+	background-color: #00cc00;
+	color: white;
+	border: 2px solid #008500;
+	padding: 5px 25px;
+}
+
+>>>>>>> 6f3c9a8... Add menu
+.wrap{
+	width: 100%;
+	min-width: 960px;
+}
+<<<<<<< HEAD
+.left{float:left;}
+.right{float:right;}
+=======
+
+.left, .right{
+	min-height: 195px;
+	border: 1px dotted #c5c5c5; padding: 5px;
+}
+.left{
+	float:left;
+	width: 45%;
+}
+.right{
+	float:right;
+	width:50%;
+	margin-left: 3%; 
+}
+
+.line{ width: 100%; }
+
+.header{
+	background-color: #0c0;
+	margin-bottom: 15px;
+}
+.header ul li{
+	float: left;
+	padding: 15px;
+	margin-right: 100px;
+	display: inline-block;
+}
+>>>>>>> 6f3c9a8... Add menu
+
+.header li a{
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+#status{
+	color: green;
+	font-size: 40px;
+}
+
+#countCalls{
+	font-size: 40px;
+	color: red;
+}
+.callStats{
+	width: 45%;
+}
+.formulaContainer{
+	width:50%;
+	float:left;
+	margin-left: 5%; 
+}
+
+label{
+	padding-right: 0 10px; 
+}
+.field {
+	clear:both;
+	text-align:left;
+	margin-bottom: 15px;
+}
+form {
+	float: left;
+	width: 40%;
+}
+
+.formulaText{
+	float: left;
+	width: 58%;
+	margin-left: 2%;
+}
+
+.formulaText p{
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+

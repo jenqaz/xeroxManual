@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Talking Phoenix</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/formula.js"></script>
+	<script type="text/javascript" src="js/sound.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+<<<<<<< HEAD
+	<div class="callStats left">
+		<div id="status" style="color: green; font-size: 40px;"></div>
+		<p id="countCalls"></p>
+		<audio controls id="Alarm" style="width:260px;">
+				<source src="audio\22742.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером.
+		</audio>
+		<input type="text" size="6" id="timeInput" value="60"/>
+		<button type="button" id="StartRefresh" onclick="Refresh()">Start</button>
+		<button type="button" id="StopRefresh" disabled>Stop</button>
+	</div>
+	<div class="formulaContainer right">
+		<form id="Form">
+			<div class="field">
+				<label for="page">Страницы</label>
+				<input type="text" id="page" size="5">
+				<label for="copy">Копии</label>
+				<input type="text" id="copy" value="" size="3">
+=======
+	<div class="line">
+		<div class="header clearfix">
+			<ul class="menu">
+				<li><a href="#">Звук</a></li>
+				<li><a href="#">Формула</a></li>
+				<li><a href="#">Печать</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="line clearfix">
+		<div class="left">
+			<div id="status">Not working!</div>
+			<div class="navigate">
+				<p id="countCalls"></p>
+				<audio controls id="Alarm" style="width:260px;">
+						<source src="audio\22742.mp3" type="audio/mpeg">
+						Тег audio не поддерживается вашим браузером.
+				</audio>
+				<input type="text" size="6" id="timeInput" value="60"/>
+				<button type="button" id="StartRefresh" onclick="Refresh()">Start</button>
+				<button type="button" id="StopRefresh">Stop</button>
+			</div>
+		</div>
+		<div class="right">
+			<form id="Form">
+				<div class="field">
+					<label for="page">Страницы</label>
+					<input type="text" id="page" size="5">
+					<label for="copy">Копии</label>
+					<input type="text" id="copy" value="" size="3">
+				</div>
+				<div class="field">
+					<label for="chkDuplex">Дуплекс</label> <input type="checkbox" id="chkDuplex" type="checkbox">
+					<label for="chkCover">Обложки</label> <input type="checkbox" id="chkCover" type="checkbox">
+				</div>
+				<div class="field">
+					<label for="FormatList">Формат</label>
+					<select id="FormatList">
+				        <option value="A4" selected>A4</option>  
+				        <option value="A3">A3</option>  
+				        <option value="SRA3">SRA3</option> 
+				        <option value="A2">A2</option> 
+				        <option value="A1">A1</option>   
+				        <option value="A0">A0</option>
+			      	</select>
+			      	<label for="WeightList">Плотность</label>
+			      	<select id="WeightList">
+			      		<option value="-80">80</option>
+			      		<option value="-90" selected>90</option>
+			      		<option value="-160">160</option>
+			      		<option value="-200">200</option>
+			      		<option value="-300">300</option>
+			      		<option value="">Плоттер</option>
+			      	</select>
+			    </div>
+			    <div class="field">
+			    	<label for="FinishList">Финиш</label>
+			      	<select id="FinishList">
+			      		<option value="no finish" selected>Без финиша</option>
+			      		<option value="cut">Резка</option>
+			      		<option value="glue">Клей</option>
+			      		<option value="fold">Сгиб</option>
+			      		<option value="staple">Скрепка</option>
+			      		<option value="sticker">Наклейка</option>
+			      		<option value="lamination">Ламинация</option>
+			      		<option value="metal spiral">Метал. пружина</option>
+			      		<option value="plastic spiral">Пластик. пружина</option>
+			      		<option value="booklet">Буклет</option>
+			      		<option value="threefold">Трифолд</option>
+			      	</select>
+			    </div>
+			    <div class="field">
+					<input type="button" id="submit" onclick="submitFormula()" value="Создать">
+				</div>
+			</form>
+			<div class="formulaText">
+				<p><b>Ваша формула:</b></p>
+				<input type="text" id="forCopy" size="45">
+			</div>
+		</div>
+	</div>
+	<div class="line clearfix">
+		<div class="left">
+			<div id="slider">
+				<button class="leftRoll" onclick="slider.left()"><</button>
+				<button class="rightRoll" onclick="slider.right()">></button>
+				<div id="pics"></div>
+			</div>
+		</div>
+		<div class="right">
+			<div id="description001" style="display : none;">
+				<h1>Slide #1</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer purus est, varius lobortis tristique auctor, ultrices vitae urna. Aliquam vel leo diam. Curabitur feugiat ut ex a sagittis. Quisque efficitur vestibulum turpis, eget elementum tellus facilisis sed. Curabitur euismod, ligula a pulvinar cursus, turpis sem lacinia ex, vel vulputate felis sem hendrerit risus. Aenean tincidunt sem mattis nibh tempus interdum. In rutrum ipsum commodo nisi malesuada, sed aliquam urna placerat. Nullam laoreet ut velit nec lacinia. Nunc finibus turpis vitae dui rutrum porttitor. In hac habitasse platea dictumst.</p>			
+>>>>>>> 6f3c9a8... Add menu
+			</div>
+			<div class="field">
+				<label for="chkDuplex">Дуплекс</label> <input type="checkbox" id="chkDuplex" type="checkbox">
+				<label for="chkCover">Обложки</label> <input type="checkbox" id="chkCover" type="checkbox">
+			</div>
+			<div class="field">
+				<label for="FormatList">Формат</label>
+				<select id="FormatList">
+			        <option value="A4" selected>A4</option>  
+			        <option value="A3">A3</option>  
+			        <option value="SRA3">SRA3</option> 
+			        <option value="A2">A2</option> 
+			        <option value="A1">A1</option>   
+			        <option value="A0">A0</option>
+		      	</select>
+		      	<label for="WeightList">Плотность</label>
+		      	<select id="WeightList">
+		      		<option value="-80">80</option>
+		      		<option value="-90" selected>90</option>
+		      		<option value="-160">160</option>
+		      		<option value="-200">200</option>
+		      		<option value="-300">300</option>
+		      		<option value="">Плоттер</option>
+		      	</select>
+		    </div>
+		    <div class="field">
+		    	<label for="FinishList">Финиш</label>
+		      	<select id="FinishList">
+		      		<option value="no finish" selected>Без финиша</option>
+		      		<option value="cut">Резка</option>
+		      		<option value="glue">Клей</option>
+		      		<option value="staple">Скрепка</option>
+		      		<option value="sticker">Наклейка</option>
+		      		<option value="lamination">Ламинация</option>
+		      		<option value="metal spiral">Метал. пружина</option>
+		      		<option value="plastic spiral">Пластик. пружина</option>
+		      		<option value="booklet">Буклет</option>
+		      		<option value="threefold">Трифолд</option>
+		      	</select>
+		    </div>
+		    <div class="field">
+				<input type="button" id="submit" onclick="submitFormula()" value="Создать">
+			</div>
+		</form>
+		<div class="formulaText">
+			<p><b>Ваша формула:</b></p>
+			<input type="text" id="forCopy" size="45">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
